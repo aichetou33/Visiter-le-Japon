@@ -1,0 +1,416 @@
+@font-face{ 
+	font-family: 'Fuji';
+	src: url("Harukaze.ttf") format("truetype");
+}
+
+body, html, header, h1{
+	margin:0px;
+	padding:0px;
+}
+
+body, html, main, h2{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font-family: helvetica;
+}
+
+header, body, html{
+	width:100%;
+	min-height: 100vh;
+}
+
+main, body, html{
+	width:100%;
+	height: 100%;
+}
+
+header{
+	
+	background: url(fujii.jpg) no-repeat center center;
+	background-size: cover;
+	color:white;
+}
+
+.wrapper{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper3{
+	display: table;
+	background:url(rede.jpg) no-repeat center center;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper4{
+	display: table;
+	background-color: pink;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper2{
+	background:url(japang.jpg) no-repeat center center;
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.content{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	text-shadow: 1px 1px 10px black;
+}
+
+h1{
+	font-size: 65px;
+	font-family: 'Fuji';
+	border : solid #FEBFD2;
+	text-align : center;
+	padding : 1em;
+	margin-right : 20%;
+	margin-left : 20%;
+	margin-bottom :1%;
+}
+
+h2{
+	font-size: 60px;
+	font-family: rockwell;
+	margin-top:19%;
+	margin-left : 8%;
+	color:white;
+}
+
+.ok{
+	font-size: 60px;
+	font-family: rockwell;
+	margin-top:19%;
+	margin-left : 70%;
+	color:brown;
+}
+
+.ok2{
+	font-size: 60px;
+	font-family: rockwell;
+	margin-top:3%;
+	margin-left :75%;
+	color:red;
+}
+
+.ok3{
+	font-size: 60px;
+	font-family: rockwell;
+	margin-top:25%;
+	margin-left :35%;
+	color:white;
+}
+
+
+p{
+	color:white;
+	font-family: Georgia, serif;
+	font-weight: bold;
+}
+
+.subtitle{
+	font-size: 50px;
+	margin-bottom :10%;
+}
+
+
+main{
+	background: url(arc.jpg) center center;
+	background-size : cover;
+
+}
+
+
+
+
+
+
+
+@keyframes slideInFromLeft{
+	0%
+	{transform: translateX(-100%); }
+		100%
+{transform: translateX(0%); }
+}
+
+h1 {
+	animation : 3s ease-out 0s 1 slideInFromLeft;
+	
+}
+.jr {
+		animation : 1s ease-out 0s 1 slideInFromLeft;
+	
+}
+
+
+
+figure{
+	float: right;
+	position: relative;
+}
+
+
+nav{
+	width: 100%;
+	font-family: Rockwell;
+	text-shadow: 1px 1px 10px black;
+	font-weight: bold;
+	position: fixed;
+}
+
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+nav > ul::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+
+nav > ul >li{
+	font-size: 20px;
+	float :left;
+	color: white;
+	position: relative;
+	margin: 0px 70px 0px 0px;
+	
+}
+
+
+
+nav > ul >li > a{
+	padding: 20px 30px;
+	color: white;
+}
+
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+.submenu{
+	display : none;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+
+
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: white;
+}
+
+.accueil::after{
+	content:'';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: deeppink;
+	transition: width .3s;
+}
+
+.accueil:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
+.villes::after{
+	content:'';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: orange;
+	transition: width .3s;
+	
+}
+
+.villes:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
+.contact::after{
+	content:'';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: lightcyan;
+	transition: width .3s;
+	
+}
+
+.contact:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
+.apdn::after{
+	content:'';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: mediumspringgreen;
+	transition: width .3s;
+	
+}
+
+.apdn:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
+
+
+
+.submenu li:hover a{
+	
+	font-weight: bold;
+}
+
+.accueil .submenu li:after{
+	color: deeppink;
+	content:'';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: deeppink;
+	transition: width .3s;
+}
+
+.accueil .submenu li:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
+.villes .submenu li:after{
+	content:'';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: orange;
+	transition: width .3s;
+}
+
+.villes .submenu li:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
+.cube{
+	
+	width:300px;
+	height:200px;
+	background-color:brown;
+	margin-left: 70%;
+	font-family: Georgia, serif;
+	font-weight: bold;
+	color:white;
+	font-size:20px;
+	text-align:center;
+	position : absolute;
+	transition-duration:1000ms;
+}
+
+
+
+.footer{
+	background: #303036;
+	color: #d3d3d3;
+	height: 300px;
+	position: relative;
+}
+
+
+
+.footer .footer-bottom{
+	background: #343a40;
+	color: #686868;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 20px;
+}
+
+
+h3{
+	font-family: Georgia, serif;
+	font-size: 30px;
+	margin-left: 15px;
+}
+
+.tee{
+	font-family: Georgia, serif;
+	margin-left: 15px;
+	font-size: 20px
+}
+
+.hist{
+	text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
